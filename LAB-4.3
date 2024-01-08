@@ -50,4 +50,5 @@ void GoNext1( struct studentNode *walk ) {
 		walk = ( walk ) -> next -> next;
 	}//end if
 	printf( "%s ", walk ) ;
+ 	printf("Name: %s, Age: %d, Sex: %c, GPA: %.2f\n", walk->name, walk->age, walk->sex, walk->gpa) ;
 }//end function

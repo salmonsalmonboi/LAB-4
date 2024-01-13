@@ -34,7 +34,8 @@ int main() {
 
  	GoNext1( &now1 ) ;
  	printf( "%s ", now1->name ) ;
-
+ 	printf("Name: %s, Age: %d, Sex: %c, GPA: %.2f\n", (now1)->name,  (now1)->age,  (now1)->sex,  (now1)->gpa);
+ 	
  	return 0 ;
 }//end function
 
@@ -48,6 +49,6 @@ void SaveNode( struct studentNode *child, char n[], int a, char s, float g ) {
 void GoNext1( struct studentNode **walk ) {
 	if ( walk != NULL ) {
 		*walk = ( *walk ) -> next -> next-> next  ; 
-	}//end if
- 	printf("Name: %s, Age: %d, Sex: %c, GPA: %.2f\n", (*walk)->name,  (*walk)->age,  (*walk)->sex,  (*walk)->gpa) ;
+	}
+
 }//end function

@@ -34,6 +34,7 @@ int main() {
 
  	GoNext2( now2 ) ;
  	printf( "%s ", (*now2)->name ) ;
+ 	printf("Name: %s, Age: %d, Sex: %c, GPA: %.2f\n", (*now2)->name,  (*now2)->age,  (*now2)->sex,  (*now2)->gpa) ;
 
  	return 0 ;
 }//end function
@@ -49,5 +50,4 @@ void GoNext2( struct studentNode **walk ) {
 	if ( walk != NULL ) {
 		*walk = ( *walk ) -> next -> next ; 
 	}//end if
- 	printf("Name: %s, Age: %d, Sex: %c, GPA: %.2f\n", (*walk)->name,  (*walk)->age,  (*walk)->sex,  (*walk)->gpa) ;
 }//end function
